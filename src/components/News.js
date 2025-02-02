@@ -56,7 +56,7 @@ export class News extends Component {
         "publishedAt": "2020-03-30T15:26:05Z",
         "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
       }
-    ]
+    ];
 
 
   constructor(){
@@ -71,15 +71,10 @@ export class News extends Component {
     return (
       <div className='container my-3'>
         <h2>News-Monkey - Top headlines</h2>
+        {this.state.articles.map{(element)=>{console.log(element)}}}
         <div className='row'>
           <div className='col-md-4'>
           <NewsItem title="mytitle" description="mydescription" imageUrl="https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg"/>
-          </div>
-          <div className='col-md-4'>
-          <NewsItem title="mytitle" description="mydescription"/>
-          </div>
-          <div className='col-md-4'>
-          <NewsItem title="mytitle" description="mydescription"/>
           </div>
         </div>
       </div>
