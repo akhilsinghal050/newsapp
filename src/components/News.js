@@ -57,8 +57,6 @@ export class News extends Component {
         "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
       }
     ];
-
-
   constructor(){
     super()
     console.log("I am a constructor from news component...")
